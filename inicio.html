@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="js/extension.js"></script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <meta name="keywords" content="CELULARES, SEGURO, ROTURA, CELULAR, MOVIL">
+    <meta name="description" content="MobileSecure - Cotizador">
+    <title>MobileSecure</title>
+</head>
+<body>
+
+<header  id="formulario"> <img src="images/Mobile Secure.gif" class="logo" > </header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark barra">
+</nav>
+<br><br>
+<h1>¡El seguro que te conviene!</h1>
+<br>
+<p>Todo lo que tenemos para ofrecerte y más. Aprende mas sobre nuestros planes disponibles, no te vas a arrepentir. ¡No olvides pedir tu presupuesto!</p>
+<br>
+<div class="planes">
+    <div>
+        <div class="card bg-success text-black mb-3">
+            <div class="card-header">1-Plan Verde</div>
+            <div class="card-body text-black">
+                <h5 class="card-title">Valores:</h5>
+                <p class="card-text">Mensual: $600 <br> Anual: $6.000<br><br>
+                    <strong>Cobertura:</strong><br> 30% de cobertura ante cualquier tipo de accidente que presente el equipo.<br>
+                    30% de reintegro sobre el valor del equipo, en caso de hurto. <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card bg-light text-black mb-3">
+        <div class="card-header">2-Plan Plata</div>
+        <div class="card-body">
+            <h5 class="card-title">Valores:</h5>
+            <p class="card-text">Mensual: $850 <br>Anual:$8.500<br><br>
+            <strong>Cobertura:</strong><br> 50% de cobertura ante cualquier tipo de accidente que presente el equipo.<br>
+            60% de reintegro sobre el valor del equipo, en caso de hurto. <br>
+            </p>
+        </div>
+    </div>
+    <div class="card text-black bg-warning mb-3">
+        <div class="card-header">3-Plan Oro</div>
+        <div class="card-body">
+            <h5 class="card-title">Valores:</h5>
+            <p class="card-text">Mensual: $1.000 <br>Anual: $10.000<br><br>
+                <strong>Cobertura:</strong><br> 100% de cobertura ante cualquier tipo de accidente que presente el equipo.<br>
+                100% de reintegro sobre el valor del equipo, en caso de hurto. <br>
+            </p>
+        </div>
+    </div>
+</div>
+<br><br>
+<h3>¡Además de las coberturas correspondientes, tenes estos servicios, con cualquier plan contratado! </h3>
+<br>
+<ul class="lista"><li>Chatea con el equipo de soporte las 24 horas</li>
+    <li>Centros de reparación de celulares, para poder tener al día el celular listo.</li>
+    <li>Reparalo en cualquier técnico que desees, tan solo se demoraría el reintegro del dinero hasta que recibamos toda la documentación.</li>
+    <li>Beneficios y descuentos únicos en nuestras marcas aliadas</li>
+</ul>
+<br>
+<div class="caja-formulario">
+    <div class="formulario">
+    <form class="">
+        <h2>¡Complete los siguientes datos y solicite su cotización inmediata!</h2>
+        <div class="errores" id="errores"></div>
+        <div class="seleccionar">
+            <label>Marca:</label>
+            <select class="marca" id="marca">
+                <option value="">Seleccionar marca</option>
+                <option value="samsung">Samsung</option>
+                <option value="xiaomi">Xiaomi</option>
+                <option value="apple">Apple</option>
+                <option value="motorola">Motorola</option>
+            </select>
+            <input type="button" onclick="confirmaMarca()" class="confirma" id="confirma" value="Confirmar Marca"/>
+            <label>Modelo:</label>
+            <select class="modelo" id="modelo">
+                <option value="">Confirme la marca antes</option>
+            </select>
+        </div>
+        <div class="planes">
+            <label>Plan:</label>
+            <input type="radio" name="plan" value="blanco" class="radio" id="blanco"/>Verde
+            <input type="radio" name="plan" value="plata" class="radio" id="plata"/>Plata
+            <input type="radio" name="plan" value="oro" class="radio" id="oro"/>Oro
+        </div>
+        <div class="forma-pago">
+            <label>Forma de pago:</label>
+            <select class="formaPago" id="formaPago">
+                <option value="anual">Anual</option>
+                <option value="mensual">Mensual</option>
+            </select>
+        </div>
+        <div class="estado">
+            <label>Estado del celular:</label>
+            <input type="radio" name="estado1" value="pantalla" class="radio" id="pantalla"/>Rotura de pantalla
+            <input type="radio" name="estado2" value="prendido" class="radio" id="prendido"/>Dificultad al prender y apagar
+            <input type="radio" name="estado3" value="botones" class="radio" id="botones"/>Falla en botones
+            <input type="radio" name="estado4" value="carga" class="radio" id="carga"/>Falla en pin de carga
+        </div>
+        <div class="personales">
+            <label>Escriba aqui su nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <input type="button" class="boton" onclick="cotizar()" value="Solicitar Cotizacion">
+    </form></div>
+</div>
+<div id="cotizacion" class="cotizacion"></div>
+
+<br>
+
+<h2 class="titulo-contacto">¡Contáctenos para confirmar su cotización y resolver cualquier duda!</h2>
+<br><br>
+<div class="contacto">
+<p>Oficina central:<br>
+Direccion: Avenida SiempreViva 123 - Springfield<br>
+Horario de atención: Lunes a Viernes de 8 a 17 hrs.<br>
+Telefono de contacto: 011-1234-5678<br>
+Whatsapp: 011-1234-5678<br><br></p>
+<p>
+Oficina de Albuquerque:<br>
+Direccion: Hisotopos 123 - Albuquerque<br>
+Horario de atención: Lunes a Viernes de 8 a 17 hrs.<br>
+Telefono de contacto: 011-1234-5678<br>
+Whatsapp: 011-1234-5678</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/extension.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+
+body {
+  background-color: #A6A6A6 !important;
+  font-family: Inter, sans-serif !important;
+}
+
+.formulario { 
+  display: grid !important;
+  justify-items: center !important;
+  margin: 2vh !important;
+  padding: 2vw !important;
+}
+
+.form-horizontal {
+  margin: 2vh !important;
+  padding: 2vw !important;
+}
+
+.logo {
+  width: 25vw;
+  height:40vh;
+}
+
+#navbarText {
+  justify-content: center !important;
+}
+
+.barra {
+  height: 4vw;
+}
+
+.nav-item {
+  margin-left: 8vh;
+  margin-right: 8vh;
+}
+
+.planes {
+  display: flex;
+  max-width: 90%;
+  justify-content: center;
+}
+
+.card {
+  margin-left: 2vh;
+  margin-right: 3vh;
+  max-width: 20vw !important;
+  min-width: 10vw !important;
+}
+
+.caja-formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  background-color: #20222ce7;
+  margin: 6vh;
+}
+
+.formulario {
+  justify-content: center;
+  background-color: rgb(218, 82, 82);
+  width: 80%;
+}
+
+.titulo-contacto {
+  display: flex;
+  justify-content: center;
+}
+.contacto { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cotizacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  margin: 6vh;
+}
+.cotizacion-total {
+  display: flex;
+  background-color: rgb(199, 189, 189);
+  width: 50%;
+  justify-content: center;
+  border: #20222ce7;
+  border-style: solid;
+  border-radius: 20%;
+}
+
+.error {
+  background-color: black;
+  text-align: center;
+  color: red;
+}
+
+.lista {
+  list-style-type:circle;
+}

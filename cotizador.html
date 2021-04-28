@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <meta name="keywords" content="CELULARES, SEGURO, ROTURA, CELULAR, MOVIL">
+    <meta name="description" content="MobileSecure - Cotizador">
+    <title>MobileSecure</title>
+</head>
+<body>
+
+<header  id="formulario"> <img src="images mobile/Mobile Secure.gif" class="logo" > </header>
+
+<div class="formulario">
+<form class="form-horizontal col-sm-8" id="myForm">
+    <h2>Cotizá tu seguro con este breve formulario:</h2>
+    <br>
+    <label for="marca" class="col-sm-6 control-label">Escriba la marca de su celular:</label>
+    <input type="text" class="form-control marca" id="marca" placeholder="Marca de su celular">
+    <label for="tipo_plan" class="col-sm-6 control-label plan">Escriba el numero del plan de seguro que desea:</label>
+    <input type="text" class="form-control inputPlan" id="tipo_plan" placeholder="Numero de su plan">
+    <br>
+    <div>
+        <div class="card border-secondary mb-3" style="max-width: 18rem;">
+            <div class="card-header">1-Plan Blanco</div>
+            <div class="card-body text-secondary">
+                <h5 class="card-title">Valores:</h5>
+                <p class="card-text">Mensual: $600 <br> Anual: $6.000</p>
+            </div>
+        </div>
+    </div>
+    <div class="card bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">2-Plan Plata</div>
+        <div class="card-body">
+            <h5 class="card-title">Valores:</h5>
+            <p class="card-text">Mensual: $850 <br>Anual:$8.500</p>
+        </div>
+    </div>
+    <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+        <div class="card-header">3-Plan Oro</div>
+        <div class="card-body">
+            <h5 class="card-title">Valores:</h5>
+            <p class="card-text">Mensual: $1.000 <br>Anual: $10.000</p>
+        </div>
+    </div>
+    <label for="pago" class="col-sm-6 control-label">¿Su forma de pago seria Mensual / Anual ?</label>
+    <input type="text" class="form-control" id="pago" placeholder="Ingrese 'Mensual' o 'Anual'">
+    <br>
+    <label for="inlineCheckbox1" class="col-sm-6 control-label">¿Su telefono tiene alguno de estos detalles? Marque las siguientes opciones:</label><br>
+    <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox1" value="option1"> Rotura de pantalla
+    </label><br>
+    <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox2" value="option2"> Marcas y/o golpes en pantalla o parte trasera
+    </label><br>
+    <label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox3" value="option3"> Problemas con el encendido?
+    </label><br><br>
+    <label for="inputNombre" class="col-sm-6 control-label">Ingrese su nombre:</label>
+    <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-6">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> ¿Es mayor de edad?
+                </label>
+            </div>
+        </div>
+    </div>
+    <label for="inputEmail3" class="col-sm-2 control-label">Ingrese su email</label>
+    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Deseo recibir ofertas via mail
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button id="boton">Enviar</button>
+        </div>
+    </div>
+</form>
+<!--</div>
+    <h5>Detalles de planes:</h5>
+    <p>Plan blanco: Cobertura 50%* contra hurto.<br>
+    Plan plata: Cobertura 100%* contra hurto y 50%* contra daños en el equipo.<br>
+    Plan oro: Cobertura 100%* contra hurto y daños en el equipo. <br>
+    *Porcentaje de valor asegurado de cada equipo, declarado en la poliza de su contrato.</p>
+    -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/extension.js"></script>
+</body>
+</html>
